@@ -23,6 +23,7 @@ dependencies = []
 dev = ["pytest>=8", "ruff>=0.15"]
 
 [project.urls]
+Documentation = "https://fonderie-dev.github.io/fonderie-burin/"
 Repository = "https://github.com/fonderie-dev/fonderie-burin"
 
 [tool.hatch.version]
@@ -30,6 +31,9 @@ path = "src/fonderie_burin/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/fonderie_burin"]
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/.github", "/docs"]
 
 [tool.ruff]
 line-length = 100
