@@ -1,0 +1,32 @@
+baseURL = "https://fonderie-dev.github.io/fonderie-burin/"
+locale = "en"
+defaultContentLanguage = "en"
+title = "Burin"
+disableKinds = ["taxonomy", "term", "rss"]
+enableRobotsTXT = true
+
+[params]
+  slug = "burin"
+  author = "R. Heller"
+  since = 2026
+  description = "Burin, a Fonderie atelier: inspecting and editing the weights of open models."
+  fonderie = "https://fonderie-dev.github.io/website/"
+  analyticsDomain = "fonderie-dev.github.io/fonderie-burin"
+
+[[menus.main]]
+  name = "Guide"
+  pageRef = "/guide"
+  weight = 1
+
+[[menus.main]]
+  name = "Référence"
+  pageRef = "/reference"
+  weight = 2
+
+[[menus.main]]
+  name = "Journal"
+  pageRef = "/journal"
+  weight = 3
+
+[markup.highlight]
+  noClasses = false

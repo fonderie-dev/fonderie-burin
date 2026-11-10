@@ -6,6 +6,10 @@ Inspecting and editing the weights of open models. Part of
 A *burin* is the engraver's chisel, used to cut fine lines into finished
 metal.
 
+Project site: <https://fonderie-dev.github.io/fonderie-burin/>, an outline of
+this repository; sections that describe functionality are marked *coming
+soon* until the code exists. Its source is in [docs/](docs/).
+
 > **Status: scaffold (○○○).** The package installs and its smoke test passes.
 > None of the scope below is implemented yet.
 
@@ -44,6 +48,7 @@ python -m pytest
 ```
 src/fonderie_burin/   package
 tests/                pytest suite: synthetic tensors, no downloads, no GPU
+docs/                 project site (Hugo), deployed to GitHub Pages
 ```
 
 CI runs the shared

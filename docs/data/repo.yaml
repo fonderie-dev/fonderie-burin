@@ -1,0 +1,12 @@
+# Burin: status line, scope and milestones. Keep in step with the README.
+state: "Scaffold. The package installs and its smoke test passes; none of the scope below is implemented yet. This site is an outline of what Burin will document, and every detailed section is marked *coming soon*."
+scope:
+  - "Read `safetensors` checkpoints lazily and report per-tensor shape, dtype and summary statistics without loading the whole model into memory."
+  - "Compare two checkpoints of the same architecture, for example a base model and its fine-tune from [Affinage](https://fonderie-dev.github.io/fonderie-affinage/), layer by layer."
+  - "Targeted edits (rescaling, zeroing, replacing or merging tensors) written to a new checkpoint, with a record of every change and the checksums of input and output."
+  - "Confirm that an edited checkpoint still loads with the expected shapes."
+out_of_scope: "Training ([Affinage](https://fonderie-dev.github.io/fonderie-affinage/)); judging whether an edit helps ([Essai](https://fonderie-dev.github.io/fonderie-essai/)). Pickle-based checkpoints are not read; see [safe loading](https://fonderie-dev.github.io/website/methode/#safe-loading)."
+milestones:
+  - "Tensor inventory and statistics for a `safetensors` file."
+  - "Checkpoint comparison report."
+  - "Recorded edits with a change log that allows the edit to be reversed."
